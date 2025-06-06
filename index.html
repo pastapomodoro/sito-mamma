@@ -1,43 +1,275 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dott.ssa Nome Psicologa</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.ssa Stefania Samek Lodovici - Psicologa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Dott.ssa Nome Psicologa</h1>
-    <nav>
-      <a href="#about">Chi Sono</a>
-      <a href="#services">Servizi</a>
-      <a href="#contacts">Contatti</a>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Dr.ssa Stefania Samek Lodovici</h1>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">Chi Sono</a>
+                <a href="#services" class="nav-link">Servizi</a>
+                <a href="#contact" class="nav-link">Contatti</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
-  <section id="about">
-    <h2>Chi Sono</h2>
-    <p>Testo di presentazione della psicologa.</p>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span>Psicologa Clinica & Psicoterapeuta</span>
+                </div>
+                <h2>Benvenuti nel mio studio</h2>
+                <p class="hero-subtitle">Offro supporto psicologico professionale in un ambiente sereno e accogliente. Insieme possiamo affrontare le sfide della vita e ritrovare il benessere emotivo.</p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Ambiente sicuro e riservato</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-user-md"></i>
+                        <span>15+ anni di esperienza</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Approccio personalizzato</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button primary">Prenota una consulenza</a>
+                    <a href="#about" class="cta-button secondary">Scopri di più</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="stefania2.jpg" alt="Dr.ssa Stefania Samek Lodovici" class="profile-image">
+                    <div class="image-decoration"></div>
+                </div>
+                <div class="floating-card">
+                    <div class="card-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Ogni persona ha in sé le risorse per crescere e guarire"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
-  <section id="services">
-    <h2>Servizi</h2>
-    <ul>
-      <li>Consulenza individuale</li>
-      <li>Terapia di coppia</li>
-      <li>Sostegno psicologico</li>
-    </ul>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Chi Sono</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sono la Dr.ssa Stefania Samek Lodovici, psicologa clinica e psicoterapeuta con oltre 15 anni di esperienza nel campo della salute mentale. Mi sono laureata in Psicologia presso l'Università degli Studi di Milano e ho conseguito la specializzazione in Psicoterapia Cognitivo-Comportamentale.</p>
+                    
+                    <p>La mia formazione include anche approfondimenti in terapia EMDR (Eye Movement Desensitization and Reprocessing), particolarmente efficace nel trattamento di traumi e disturbi dell'umore.</p>
+                    
+                    <h3>Il mio approccio</h3>
+                    <p>Credo fermamente che ogni persona sia unica e meriti un percorso terapeutico personalizzato. Il mio approccio integra tecniche evidence-based con una profonda attenzione alla relazione terapeutica, creando uno spazio sicuro dove esplorare difficoltà e risorse personali.</p>
+                    
+                    <p>Lavoro con adulti e adolescenti, offrendo supporto per disturbi d'ansia, depressione, disturbi dell'umore, difficoltà relazionali e traumi. La mia pratica è caratterizzata da empatia, rispetto e professionalità.</p>
+                </div>
+                <div class="about-credentials">
+                    <h3>Formazione e Specializzazioni</h3>
+                    <ul>
+                        <li>Laurea in Psicologia - Università degli Studi di Milano</li>
+                        <li>Specializzazione in Psicoterapia Cognitivo-Comportamentale</li>
+                        <li>Certificazione EMDR - Livello Senior</li>
+                        <li>Formazione Psicologia cognitiva comportamentale</li>
+                        <li>Iscrizione Albo Psicologi Verona</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contacts">
-    <h2>Contatti</h2>
-    <p>Email: nome@email.com</p>
-    <p>Telefono: 123456789</p>
-  </section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Servizi</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Terapia Individuale</h3>
+                    <p>Percorsi personalizzati per affrontare ansia, depressione, disturbi dell'umore e difficoltà emotive. Supporto professionale in un ambiente riservato e accogliente.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Terapia di Coppia</h3>
+                    <p>Sostegno alle coppie per migliorare la comunicazione, risolvere conflitti e rafforzare il legame affettivo attraverso tecniche specifiche.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Consulenze Online</h3>
+                    <p>Sedute di psicoterapia via videochiamata per chi preferisce il comfort di casa o ha difficoltà negli spostamenti. Stessa qualità, maggiore flessibilità.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Terapia EMDR</h3>
+                    <p>Trattamento specializzato per traumi, disturbi post-traumatici e fobie attraverso la tecnica EMDR, riconosciuta internazionalmente.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Terapia Familiare</h3>
+                    <p>Supporto alle famiglie per migliorare le dinamiche relazionali e affrontare periodi di cambiamento o difficoltà.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Valutazioni Psicologiche</h3>
+                    <p>Assessment approfonditi per diagnosi differenziali e pianificazione di interventi terapeutici mirati e personalizzati.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Dott.ssa Nome Psicologa</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contatti</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informazioni di Contatto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Studio</h4>
+                            <p>Via San Procolo 5, 37017</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefono</h4>
+                            <p>+39 3472510773</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>stefania.samek@yahoo.it</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Richiedi una consulenza</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nome e Cognome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Telefono">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Seleziona il servizio</option>
+                                <option value="individuale">Terapia Individuale</option>
+                                <option value="coppia">Terapia di Coppia</option>
+                                <option value="online">Consulenza Online</option>
+                                <option value="emdr">Terapia EMDR</option>
+                                <option value="familiare">Terapia Familiare</option>
+                                <option value="valutazione">Valutazione Psicologica</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Messaggio (opzionale)" rows="4"></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Accetto l'informativa sulla privacy</label>
+                        </div>
+                        <button type="submit" class="submit-button">Invia Richiesta</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <h3>Dove Trovarmi</h3>
+                <div class="map-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.636!2d10.971796!3d45.433676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f5f0b5a7e7c3d%3A0x8c4e7e8f9e9e8e8e!2sVia%20San%20Procolo%205%2C%2037017%20Lazise%20VR%2C%20Italy!5e0!3m2!1sen!2sit!4v1640000000000!5m2!1sen!2sit" 
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Dr.ssa Stefania Samek Lodovici</h3>
+                    <p>Psicologa e Psicoterapeuta</p>
+                    <p>Specializzata in terapia cognitivo-comportamentale</p>
+                    <p>P.IVA: 02963080235</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-envelope"></i> stefania.samek@yahoo.it</p>
+                    <p><i class="fas fa-phone"></i> +39 3472510773</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Seguimi</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dr.ssa Stefania Samek Lodovici. Tutti i diritti riservati.</p>
+                <p>P.IVA: 12345678901 | <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
