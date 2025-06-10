@@ -195,4 +195,48 @@ function addImageLoadingEffect() {
 }
 
 // Initialize image loading effects
-document.addEventListener('DOMContentLoaded', addImageLoadingEffect); 
+document.addEventListener('DOMContentLoaded', addImageLoadingEffect);
+
+// Scroll Arrow Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollArrow = document.querySelector('.scroll-arrow');
+    
+    if (scrollArrow) {
+        scrollArrow.addEventListener('click', function() {
+            const aboutSection = document.querySelector('#about');
+            if (aboutSection) {
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = aboutSection.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+        
+        // Add hover effect animation
+        scrollArrow.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.1)';
+        });
+        
+        scrollArrow.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+        });
+        
+        // Hide scroll arrow when scrolling down
+        window.addEventListener('scroll', function() {
+            const heroSection = document.querySelector('.hero');
+            const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+            const scrollPosition = window.pageYOffset + window.innerHeight;
+            
+            if (scrollPosition > heroBottom) {
+                scrollArrow.style.opacity = '0';
+                scrollArrow.style.pointerEvents = 'none';
+            } else {
+                scrollArrow.style.opacity = '1';
+                scrollArrow.style.pointerEvents = 'auto';
+            }
+        });
+    }
+}); 
